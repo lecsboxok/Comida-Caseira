@@ -201,3 +201,9 @@ html {
     color: #fff;
     margin-top: 4px;
 }
+
+@media screen and (max-width: 400px) {
+    body {
+        background-color: aqua;
+    }
+}
