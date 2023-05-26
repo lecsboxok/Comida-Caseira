@@ -326,4 +326,8 @@ html {
         width: 90vw;
         margin-bottom: 25px;
     }
+
+    .panela {
+        margin: 0;
+    }
 }
