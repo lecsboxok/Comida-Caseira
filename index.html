@@ -8,19 +8,23 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="tablet.css" media="screen and (max-width:768px)">
     <link rel="icon" href="Img/icone.svg">
+    <script src="https://kit.fontawesome.com/c93f4c944c.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header id="header">
-        <nav class="menu">
-            <div class="imagem">
-                <img src="Img/logo.png" alt="Logo" class="logo">
-            </div>
+        <div class="imagem">
+            <img src="Img/logo.png" alt="Logo" class="logo">
+        </div>
+        <nav class="menu" id="menu">
             <a href="#header" class="item">HOME</a>
             <a href="#nossaComida" class="item">NOSSA COMIDA</a>
             <a href="#nossaEquipe" class="item">NOSSA EQUIPE</a>
             <a href="#cardapio" class="item">NOSSO CARDÁPIO</a>
             <a href="#contato" class="item">CONTATO</a>
         </nav>
+        <a class="menu-barras" onclick="mostrarMenu()">
+            <i id="icone" class="fa-solid fa-bars" style="color: #000;"></i>
+        </a>
     </header>
     <!-- FIM CABEÇALHO -->
     <!-- DIVISÃO -->
@@ -154,5 +158,22 @@
             </div>
         </section>
     </footer>
+    
+    <script>
+        function mostrarMenu() {
+            var menu = document.getElementById("menu");
+            var icone = document.getElementById("icone");
+
+            if (getComputedStyle(menu).display == 'none') {
+                menu.style.display = "flex";
+                icone.classList.remove("fa-bars");
+                icone.classList.add("fa-times");
+            } else {
+                menu.style.display = "none";
+                icone.classList.remove("fa-times");
+                icone.classList.add("fa-bars");
+            }
+        }
+    </script>
 </body>
 </html>

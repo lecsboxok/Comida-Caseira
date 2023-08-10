@@ -27,6 +27,7 @@
 .item {
     font: 400 15px 'Mont', sans-serif;
     padding: 0 0px;
+    margin-left: 25px ;
 }
 
 .item:hover {
@@ -35,9 +36,10 @@
 }
 
 .logo {
-    width: 25vw;
+    width: 30vw;
     height: auto;
     text-align: center;
+    margin-left: 10px;
 }
 
 .menu {
@@ -111,4 +113,31 @@
 
 .pratos {
     margin-bottom: 30px;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 140px;
+    left: 0px;
+    height: 300px;
+    width: 100%;
+} 
+
+.menu-barras {
+    display: initial;
+    display: flex;
+    justify-content: center;
+}
+
+#icone {
+    font-size: 30px;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
 }

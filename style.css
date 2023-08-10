@@ -33,6 +33,7 @@ html {
 .item {
     font: 500 1.7rem 'Mont', sans-serif;
     color: #678471;
+    margin-right: 30px;
 }
 
 .item:hover {
@@ -49,7 +50,10 @@ html {
 
 #header {
     margin: 0 30px;
+    display: flex;
+    justify-content: space-around;
 }
+
 
 /* DIVISÃO */
 .divisao {
@@ -200,6 +204,10 @@ html {
     font: 300 18px 'Mont', sans-serif;
     color: #fff;
     margin-top: 4px;
+}
+
+.menu-barras {
+    display: none;
 }
 
 @media screen and (max-width: 400px) {
