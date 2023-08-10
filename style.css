@@ -238,19 +238,19 @@ html {
     }
 
     #header .menu .item {
-        font: 400 8px 'Mont', sans-serif;
+        font: 500 14px 'Mont', sans-serif;
         padding: 0 2px;
     }
 
     #header .menu .item:hover {
-        font: 400 8px 'Mont', sans-serif;
+        font: 500 14px 'Mont', sans-serif;
         padding: 0 2px;
     }
 
     .menu {
         display: flex;
         align-items: center;
-        flex-wrap: wrap;
+        margin-top: 60px;
     }
 
     .conteudo .texto {
@@ -263,9 +263,6 @@ html {
         margin-left: 25px;
     }
 
-    #header .menu {
-        display: block;
-    }
 
     .conteudo {
         margin: 0 20px;
